@@ -21,7 +21,7 @@ export function useCheckin() {
       navigate("/");
     },
 
-    onError: () => toast.error("There was an error checking in the booking"),
+    onError: () => toast.error("There was an error checking in"),
   });
 
   return { checkin, isCheckingIn };
