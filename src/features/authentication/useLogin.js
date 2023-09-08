@@ -12,7 +12,7 @@ export function useLogin() {
 
     onSuccess: (user) => {
       // navigate to dashboard
-      navigate("/dashboard");
+      navigate("/dashboard", { replace: true });
       // invalidate user query
       queryClient.setQueriesData(["user"], user);
     },
