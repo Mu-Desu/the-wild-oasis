@@ -14,7 +14,7 @@ export function useLogin() {
       // navigate to dashboard
       navigate("/dashboard", { replace: true });
       // invalidate user query
-      queryClient.setQueriesData(["user"], user);
+      queryClient.setQueryData(["user"], user.user);
     },
 
     onError: (err) => {
